@@ -5,6 +5,9 @@
             width: 250px;
         }
     }
+    .navbar-toggler{
+        background-color:rgb(255, 255, 255);
+    }
     .navbar-nav{
         img{
             width: 33px;
@@ -15,6 +18,11 @@
                 margin: 0 20px;
                img{
                 padding: 0 20px;
+               }
+               a{
+                font-family: Arial, Helvetica, sans-serif ;
+                font-size: 16px;
+                font-weight: 600;
                }
             }
         }
@@ -41,7 +49,7 @@
     }
 
     background-image: url("image/background.png");
-    height: 100vh;
+    height: 650px;
     background-position: center bottom ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,6 +95,11 @@
             height: 70vh;
         }
     }
+    @media (max-width:720px) {
+        .header_image{
+            display: none;
+        }
+    }
 }
 
 .form-group.required .form-label:after {
@@ -94,6 +107,20 @@
     color:red;
   }
 
+
+  // navbar responsive design
+
+  @media (min-width: 995px) and (max-width: 2048px) {
+   .mobile_navbar{
+        display: none;
+    }
+
+}
+@media (min-width:0px) and (max-width:995px) {
+    .web_navbar{
+        display: none;
+    }
+}
 
 //   .patner-logo{
 
@@ -120,7 +147,27 @@
             }
                 }
     }
+    .embed-responsive {
+        text-align: center;
+    }
+    .embed-responsive-none{
+        display: block;
+    }
+    @media (max-width:1024px) {
+        .embed-responsive-none{
+            display: none !important;
+        }
+    }
+    @media (min-width:1024px) {
+        .embed-responsive{
+            display: none !important;
+        }
+    }
+   
 }
+
+
+
 
 .activites{
     margin-top: 30px;
@@ -233,3 +280,16 @@ footer{
 
 }
 
+@media  (min-width:0px) and (max-width:995px) {
+    footer .footer-class {
+        padding: 50px 0;
+        background-color: #1E2833;
+        border-radius: 0 150px 0 0;
+    }
+    footer .logo-section {
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(116, 116, 116);
+        border-width: 100%;
+        text-align: center;
+    }
+}
