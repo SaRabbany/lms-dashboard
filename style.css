@@ -84,6 +84,18 @@
   }
 }
 
+.carousel-control-prev-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url("image/left-arrow.png");
+}
+
+.carousel-control-next-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url("image/right-arrow.png");
+}
+
 .form-group.required .form-label:after {
   content: "*";
   color: red;
@@ -133,7 +145,7 @@
 }
 
 .activites {
-  margin-top: 30px;
+  margin: 30px 30px 30px 30px;
   padding: 20px;
   background-color: #F1F6FA;
   box-shadow: 1px 5px 10px #c2c2c2;
@@ -149,7 +161,7 @@
 }
 .activites .card p {
   font-family: Arial, Helvetica, sans-serifs;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: #5a5a5a;
 }
